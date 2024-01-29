@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shadows+Into+Light&display=swap');
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+.fadeInUp-animation {
+    animation: 0.3s fadeInUp;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+    color:black;
+}
+
+main {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    transition: all .4s ease-in-out;
+}
+
+nav > a {
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px; 
+    color: black;
+}
+
+nav > a:hover {
+    color:#daaf74;
+}
+
+
+.title{
+    text-align:left;
+}
+
+.tagline, .title > h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+.caret {
+    text-align:center;
+    padding: 0px;
+    font-size:larger;
+    font-weight: bolder;
+    background-color: #f5fcff;
+    padding-bottom: 30px;
+}
+
+.grid-container {
+    background-color: #f5fcff;
+    min-height: 60vh;
+}
+
+.about {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.image-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.image-column  > img{
+    border-radius: 16px;
+}
+
+#portfolio {
+    background-color: #f4f8f6;
+}
+
+#portfolio > .title > h1, h2{
+    letter-spacing: 1px;
+}
+
+.title > h5 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+#instagram-carousel {
+    display: flex;
+    align-items: center;
+}
+
+#instagram-carousel img {
+    width: 50%;
+    margin: auto;
+    height: 50%;
+}
+
+.custom-max-height {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    height: 100%;
+    background-color: #dbb075;
+    opacity: 1; /* Adjust opacity as needed */
+  }
+
+button {
+    width: 150px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #dbb075, #dbb988, #daaf74, #dbb075);
+    box-shadow: 0 4px 15px 0 rgba(219, 176, 117, 0.5);
+}
+
+button:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.contact {
+    background-color: #f5fcff;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+    line-height: 1.5; /* Adjust the line height as needed */
+}
+
+li img {
+    margin-right: 10px; /* Adjust the spacing between the logo and text as needed */
+}
+
+footer {
+    background-color: #dbb075;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer>p {
+    margin: 0;
+}
+
+.golden {
+    color: #dbb075;
+}
+
